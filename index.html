@@ -249,7 +249,7 @@ footer{background:#1a4fa8;padding:56px 40px 32px;}
 .fcol ul{list-style:none;}
 .fcol li{font-size:12px;color:rgba(255,255,255,.4);margin-bottom:4px;cursor:default;transition:color .2s;letter-spacing:.2px;line-height:1.5;}
 .fcol li:hover{color:rgba(255,255,255,.8);}
-.fcol li.flink{cursor:pointer;color:rgba(255,255,255,.55);}
+.fcol li.flink{cursor:pointer;color:rgba(255,255,255,.55);transition:color .2s,letter-spacing .2s;}
 .fcol li.flink:hover{color:var(--gold);}
 .fhr{height:.5px;background:rgba(255,255,255,.1);margin-bottom:26px;}
 .fbot{display:flex;justify-content:space-between;align-items:center;font-size:var(--f-small);color:rgba(255,255,255,.28);}
@@ -750,16 +750,16 @@ body.force-mobile .h-scroll-hint{display:none!important;}
     <div class="fcol">
       <h4 id="ftC1T">导航</h4>
       <ul id="ftC1">
-        <li>公司简介</li>
-        <li>产品系列 — 西服</li>
-        <li>产品系列 — 双面呢大衣</li>
-        <li>产品系列 — 风衣</li>
-        <li>产品系列 — 羽绒服</li>
-        <li>生产车间</li>
-        <li>海外生产基地</li>
-        <li>海外设计公司</li>
-        <li>国际认证</li>
-        <li>合作伙伴</li>
+        <li class="flink" onclick="backToMain();setTimeout(()=>document.getElementById('about').scrollIntoView({behavior:'smooth'}),100)">公司简介</li>
+        <li class="flink" onclick="backToMain();setTimeout(()=>document.getElementById('products').scrollIntoView({behavior:'smooth'}),100)">产品系列 — 西服</li>
+        <li class="flink" onclick="backToMain();setTimeout(()=>document.getElementById('products').scrollIntoView({behavior:'smooth'}),100)">产品系列 — 双面呢大衣</li>
+        <li class="flink" onclick="backToMain();setTimeout(()=>document.getElementById('products').scrollIntoView({behavior:'smooth'}),100)">产品系列 — 风衣</li>
+        <li class="flink" onclick="backToMain();setTimeout(()=>document.getElementById('products').scrollIntoView({behavior:'smooth'}),100)">产品系列 — 羽绒服</li>
+        <li class="flink" onclick="backToMain();setTimeout(()=>document.getElementById('workshops').scrollIntoView({behavior:'smooth'}),100)">生产车间</li>
+        <li class="flink" onclick="backToMain();setTimeout(()=>document.getElementById('global').scrollIntoView({behavior:'smooth'}),100)">海外生产基地</li>
+        <li class="flink" onclick="backToMain();setTimeout(()=>document.getElementById('design').scrollIntoView({behavior:'smooth'}),100)">海外设计公司</li>
+        <li class="flink" onclick="backToMain();setTimeout(()=>document.getElementById('certifications').scrollIntoView({behavior:'smooth'}),100)">国际认证</li>
+        <li class="flink" onclick="backToMain();setTimeout(()=>document.getElementById('partners').scrollIntoView({behavior:'smooth'}),100)">合作伙伴</li>
       </ul>
     </div>
     <div class="fcol">
